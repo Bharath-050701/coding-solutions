@@ -59,14 +59,17 @@ In 2015-01-04, the temperature was higher than the previous day (20 -> 30).
 ## Solution
 
 **Language:** SQL  
-**Runtime:** 505 ms (beats 62.50%)  
+**Runtime:** 573 ms (beats 28.89%)  
 **Memory:** 0B (beats 100.00%)  
-**Submitted:** 2026-08-29T13:12:46.679Z  
+**Submitted:** 2026-08-29T13:19:22.453Z  
 
 ```sql
-SELECT w1.id
-FROM Weather w1, Weather w2
-WHERE DATEDIFF(w1.recordDate, w2.recordDate) = 1 AND w1.temperature > w2.temperature;
+SELECT t1.id
+FROM Weather t1
+JOIN Weather t2
+  ON DATEDIFF(t1.recordDate, t2.recordDate) = 1
+WHERE t1.temperature > t2.temperature;
+
 ```
 
 ---
