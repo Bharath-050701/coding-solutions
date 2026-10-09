@@ -4,7 +4,7 @@ class Solution {
         int noRob=0;
         for(int num:nums){
             int newRob=noRob+num;
-            int newNorob=Math.max(noRob,rob);
+    int newNorob=Math.max(noRob,rob);
             rob=newRob;
             noRob=newNorob;
         }
