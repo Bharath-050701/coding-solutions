@@ -41,8 +41,8 @@ Total amount you can rob = 2 + 9 + 1 = 12.
 
 **Language:** Java  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 42.4 MB (beats 93.88%)  
-**Submitted:** 2026-10-09T03:32:11.232Z  
+**Memory:** 42.6 MB (beats 74.61%)  
+**Submitted:** 2026-10-09T03:47:32.785Z  
 
 ```java
 class Solution {
@@ -53,7 +53,7 @@ class Solution {
             int newRob=noRob+num;
     int newNorob=Math.max(noRob,rob);
             rob=newRob;
-            noRob=newNorob;
+           noRob=newNorob;
         }
         return Math.max(rob,noRob);
     }
