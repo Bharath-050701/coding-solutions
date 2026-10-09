@@ -6,7 +6,7 @@ class Solution {
             int newRob=noRob+num;
     int newNorob=Math.max(noRob,rob);
             rob=newRob;
-            noRob=newNorob;
+           noRob=newNorob;
         }
         return Math.max(rob,noRob);
     }
